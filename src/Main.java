@@ -8,6 +8,7 @@ import java.util.List;
 import cogs.Cog;
 
 public class Main {
+
     public static void main(String[] args) {
         Dotenv dotenv = Dotenv.load();
         String token = dotenv.get("TOKEN");
