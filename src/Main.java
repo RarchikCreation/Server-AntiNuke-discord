@@ -13,6 +13,7 @@ public class Main {
         Dotenv dotenv = Dotenv.load();
         String token = dotenv.get("TOKEN");
         Database.init();
+
         JDA jda = JDABuilder.createDefault(token,
                         GatewayIntent.GUILD_MESSAGES,
                         GatewayIntent.MESSAGE_CONTENT,
