@@ -6,10 +6,10 @@ import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEve
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import net.dv8tion.jda.api.JDA;
 
-
 public class PingCommand extends ListenerAdapter implements Cog {
+
     @Override
-    public void registerCommands(JDA jda) {
+    public void register(JDA jda) {
         jda.upsertCommand("active", "Проверка бота на активность").queue();
     }
 
